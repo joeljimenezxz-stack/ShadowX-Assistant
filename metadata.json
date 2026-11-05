@@ -1,0 +1,6 @@
+{
+  "name": "ShadowX Assistant",
+  "description": "IA especializada en Roblox Studio, programación Luau y desarrollo de videojuegos por ShadowX Studios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
