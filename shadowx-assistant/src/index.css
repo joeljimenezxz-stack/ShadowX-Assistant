@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Custom dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dc2626;
+  }
+}
+
+/* Markdown prose overrides for Roblox Luau code formatting */
+.prose-shadowx {
+  color: #d4d4d8;
+  line-height: 1.68;
+}
+
+.prose-shadowx h1, .prose-shadowx h2, .prose-shadowx h3, .prose-shadowx h4 {
+  color: #f4f4f5;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.prose-shadowx h1 { font-size: 1.35rem; }
+.prose-shadowx h2 { font-size: 1.2rem; }
+.prose-shadowx h3 { font-size: 1.05rem; }
+
+.prose-shadowx p {
+  margin-bottom: 0.75rem;
+}
+
+.prose-shadowx ul, .prose-shadowx ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-shadowx ul { list-style-type: disc; }
+.prose-shadowx ol { list-style-type: decimal; }
+
+.prose-shadowx li {
+  margin-bottom: 0.25rem;
+}
+
+.prose-shadowx strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.prose-shadowx code:not(pre code) {
+  background-color: #18181b;
+  color: #f87171;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.prose-shadowx blockquote {
+  border-left: 3px solid #dc2626;
+  padding-left: 0.85rem;
+  color: #a1a1aa;
+  font-style: italic;
+  margin: 0.75rem 0;
+}
+
+.prose-shadowx a {
+  color: #f87171;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
